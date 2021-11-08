@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title> About 신규진 </title>
+
+    <link rel="stylesheet" href="{% static 'blog/bootstrap/bootstrap.min.css' %}" media="screen">
+    <link rel="stylesheet" href="{% static 'single_pages/css/about_me.css' %}" media="screen">
+    <script src="https://kit.fontawesome.com/daca770f25.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+{% include 'blog/navbar.html' %}
+
+<section>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1>안녕하세요. 신규진입니다.</h1>
+                <br/>
+                <p class="lead">
+                    운동,음악 및 맛집 탐방하는 것을 좋아하며<br/>
+                    IT업계 취업을 준비하는 학생입니다...<br/>
+                    계속해서 이 페이지를 하나하나 채워나갈 것입니다.
+                </p>
+
+                <ul>
+                    <li>School</li>
+                    <ul>
+                        <li>교하고등학교 (2010.03~2013.02)</li>
+                        <li>숭실대학교 (2016.03 ~ 2022.02(졸업예정))</li>
+                    </ul>
+                    <li>Tech Stack</li>
+                    <ul>
+                        <li>Language: Python,Java,C++,C</li>
+                        <li>Web Framework: Django,Springboot</li>
+                        <li>Major: AI Convergence</li>
+                        <li><a href="http://www.github.com/tlsrbwls999">Github</a></li>
+                    </ul>
+                    <li>ACTIVITIES</li>
+                    <ul>
+                        <li>SSU Ambassador 14th (2019.03~2020.02)</li>
+                    </ul>
+                </ul>
+
+            </div>
+            <div class="col-lg-4">
+                <img class="img-fluid" src="{% static 'single_pages/images/im.jpg' %}">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light margin-for-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>PORTFOLIO</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#pycon2017">
+                    <img class="card-img-top" src="{% static 'single_pages/images/mbti.jpg' %}">
+                    <div class="card-body">
+                        <h5 class="card-title">MBTI 성격 유형</h5>
+                        <p>활동가형 사람은 자유로운 사고의 소유자입니다. 종종 분위기 메이커 역할을 하기도 하는 이들은 단순한 인생의 즐거움이나 그때그때 상황에서 주는 일시적인 만족이 아닌 타인과 사회적, 정서적으로 깊은 유대 관계를 맺음으로써 행복을 느낍니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#inflearn_django2">
+                    <img class="card-img-top" src="{% static 'single_pages/images/miso.jpg' %}">
+                    <div class="card-body">
+                        <h5 class="card-title">숭실대학교 홍보대사 MISO 14기 활동을 했습니다.</h5>
+                        <p>숭실대학교 홍보대사 MISO 14기 활동을 했습니다. 기획팀의 일원으로서 다양한 이벤트들을 만들고 개최하였습니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#automation_python">
+                    <img class="card-img-top" src="{% static 'single_pages/images/health.jpg' %}">
+                    <div class="card-body">
+                        <h5 class="card-title">취미 생활</h5>
+                        <p>제가 가진 취미로는 헬스가 있습니다. 2020년 2월부터 꾸준히 운동을 실시하여 건강한 신체와 정신을 가지고 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="pycon2017" tabindex="-1" role="dialog" aria-labelledby="pycon2017ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="pycon2017ModalLabel">MBTI 성격 유형</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/mbti.jpg' %}">
+                    </div>
+                    <div class="col-lg-5">
+                        <p>저는 자유로운 사고의 소유자입니다. 종종 분위기 메이커 역할을 하기도 하는 이들은 단순한 인생의 즐거움이나 그때그때 상황에서 주는 일시적인 만족이 아닌 타인과 사회적, 정서적으로 깊은 유대 관계를 맺음으로써 행복을 느낍니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="inflearn_django2" tabindex="-1" role="dialog" aria-labelledby="inflearnDjangoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id=" inflearnDjangoModalLabel">숭실대학교 홍보대사 MISO 14기 활동을 했습니다.</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/miso.jpg' %}">
+                    </div>
+                    <div class="col-lg-5">
+                        <p>저는 숭실대학교 홍보대사 MISO 14기 활동을 했습니다. 기획팀의 일원으로서 다양한 이벤트들을 만들고 개최하였습니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="automation_python" tabindex="-1" role="dialog" aria-labelledby="automationPythonModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id=" automationPythonModalLabel">취미 생활</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/health.jpg' %}">
+                    </div>
+                    <div class="col-lg-5">
+                        <p>제가 가진 취미로는 헬스가 있습니다. 2020년 2월부터 꾸준히 운동을 실시해서 건강한 신체와 정신을 가질 수 있었습니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="fixed-bottom">
+    {% include 'blog/footer.html' %}
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+</body>
+</html>

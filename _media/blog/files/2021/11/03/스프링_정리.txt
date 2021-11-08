@@ -1,0 +1,52 @@
+스프링 이니셜라이저로 프로젝트 생성
+
+리소스에서 어플리케이션 설정을 통해 포트번호 변경 가능  
+
+스프링에서 요청을 받는 (get)것을 컨트롤러라고 한다.
+컨트롤러라는 패키지를 만들어줘야함 이후 컨트롤러를 동작시키기 위해서는 
+annotation으로 지정을 해줘야함 
+@RestController 지정하면 rest api를 처리하는 컨트롤러라는 것
+@RequestMapping을 통해 Uri를 지정해주는 annotation이다 
+최상단에 위치
+
+getMapping을 통해 주소 할당 해주고 연결 
+
+
+예전방식!!
+예전에는 requestMapping을 통해 get,delete,post 등등이 다 연결되서 따로 지정을 해줘야함 
+@RequestMapping(path='/hi',method=RequestMethod.GET)이런식으로 
+
+
+
+paht-variable이란??
+변화하는 값들 적용 이따 코드 적용 
+
+쿼리파라미터는 검색을 할때의 여러가지 매개변수의 인자를 얘기함
+
+
+@GetMapping("/hello")   //http:localhost8080/api/hello이다!
+    public String hello(){
+        return "hello spring boot!";
+    }
+    @GetMapping("/path-variable/{name}")
+    public String pathVariable(@PathVariable String name){
+
+        System.out.println("PathVariable:"+name);
+        return name;
+
+    }
+
+
+
+스프링의 핵심
+
+ioc -스프링 컨테이너, 제어의 역전,싱글톤의 형태로 관리됨
+DI- 의존성으로 부터 격리시켜 코드 테스으테 용이하다 
+
+
+@Component-스프링에서 알아서 빈으로 만들어서 관리를 해줘라~~이런 의미에 어노테이션이다
+
+
+인텔리제이에서 test를 만들때 컨트롤 쉬프트 t누르면 됨 (junit으로 테스트)
+
+
